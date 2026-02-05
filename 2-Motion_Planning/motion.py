@@ -15,7 +15,7 @@ class State(object):
         self.goal = goal_position
         self.grid = start_grid
         self.total_moves = 0
-
+        
     def manhattan_distance(self):
         """Calculate Manhattan distance from current position to goal."""
         return abs(self.position[0] - self.goal[0]) + abs(self.position[1] - self.goal[1])
